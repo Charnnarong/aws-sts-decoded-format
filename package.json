@@ -6,6 +6,9 @@
   "engines": {
     "vscode": "^1.84.0"
   },
+  "repository": {
+    "url": "https://github.com/Charnnarong/aws-sts-decoded-format"
+  },
   "categories": [
     "Other"
   ],
