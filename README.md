@@ -1,8 +1,24 @@
 # aws-sts-decoded-format
 
-After running `aws sts decode-authorization-message --encoded-message abc123` where `abc123` is the encoded message. You will get the json output. However it is not format. You will need to replace `\"` with `"` and replace `"{}"` to `{}` and format it. Then using JSON format against the replaced text for readability.
+After running aws sts decode-authorization-message --encoded-message abc123, where abc123 is the encoded message, you will receive JSON output. However, it is not formatted. You will need to replace \" with " and "{}" with {}, and then format it. Afterward, use a JSON formatter for improved readability.
 
-This plugin perform the text replacement mentioned above and call format on a file.
+This plugin performs the text replacements mentioned above and formats a file.
+
+## Example
+
+From
+
+```json
+{"DecodedMessage": "{\"allowed\":false}"}
+```
+
+To
+
+```json
+{
+  "DecodedMessage": { "allowed": false }
+}
+```
 
 ## Extension hub
 
