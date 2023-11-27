@@ -15,10 +15,6 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 const unescape = (editor: vscode.TextEditor) => {
-  if (!editor) {
-    return;
-  }
-
   let selection: vscode.Range | vscode.Selection = editor.selection;
   if (selection.isEmpty) {
     selection = entireDocumentRange(editor);
