@@ -3,11 +3,11 @@ import * as vscode from "vscode";
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand("aws-sts-decoded-format.format", () => {
     const editor = vscode.window.activeTextEditor;
-    if (editor) {
-      unescape(editor);
-      vscode.languages.setTextDocumentLanguage(editor.document, "json");
+    if (!editor) {
+      return;
     }
-
+    unescape(editor);
+    vscode.languages.setTextDocumentLanguage(editor.document, "json");
     vscode.commands.executeCommand("editor.action.formatDocument");
   });
 
