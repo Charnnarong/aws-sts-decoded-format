@@ -12,7 +12,8 @@ From
 {"DecodedMessage": "{\"allowed\":false}"}
 ```
 
-To
+To  
+(Run `AWS STS Decoded format` command from command palette)
 
 ```json
 {
