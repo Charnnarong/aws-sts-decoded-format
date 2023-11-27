@@ -2,7 +2,7 @@
   "name": "aws-sts-decoded-format",
   "displayName": "AWS STS Decoded format",
   "description": "Format decoded ",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.84.0"
   },
